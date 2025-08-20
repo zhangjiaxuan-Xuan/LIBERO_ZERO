@@ -5,7 +5,22 @@
 
 import os
 import sys
-sys.path.insert(0, '/home/x/anaconda3/envs/openvla-oft/LIBERO')
+import os
+
+# Dynamically detect the repository root (directory that contains the 'libero' package)
+def _get_repo_root():
+    cur = os.path.abspath(os.path.dirname(__file__))
+    while True:
+        if os.path.isdir(os.path.join(cur, 'libero')):
+            return cur
+        parent = os.path.abspath(os.path.join(cur, '..'))
+        if parent == cur:
+            return os.path.abspath(os.path.dirname(__file__))
+        cur = parent
+
+REPO_ROOT = _get_repo_root()
+if REPO_ROOT not in sys.path:
+    sys.path.insert(0, REPO_ROOT)
 
 from libero.libero.benchmark import get_benchmark
 

@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 from PIL import Image
 
 # Add LIBERO path
-sys.path.append('/home/x/anaconda3/envs/openvla-oft/LIBERO')
+sys.path.append('./LIBERO')
 
 def validate_and_render_env():
     """验证环境并生成第三视角图片"""
@@ -78,7 +78,7 @@ def validate_and_render_env():
             img_rotated = img_pil.rotate(180)
             
             # 保存图片
-            output_path = "/home/x/anaconda3/envs/openvla-oft/LIBERO/libero_goal_new_validation.png"
+            output_path = "./LIBERO/libero_goal_new_validation.png"
             img_rotated.save(output_path)
             
             print(f"🖼️ Image saved to: {output_path}")
@@ -93,7 +93,7 @@ def validate_and_render_env():
             plt.title(f"LIBERO Goal New Environment - Task: {task_name}\n(After 12 steps, 180° rotated)")
             plt.axis('off')
             
-            output_path_plt = "/home/x/anaconda3/envs/openvla-oft/LIBERO/libero_goal_new_validation_with_title.png"
+            output_path_plt = "./LIBERO/libero_goal_new_validation_with_title.png"
             plt.savefig(output_path_plt, dpi=150, bbox_inches='tight')
             plt.close()
             

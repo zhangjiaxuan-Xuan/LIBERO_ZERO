@@ -4,7 +4,7 @@ import sys
 import os
 
 # Add LIBERO path
-sys.path.append('/home/x/anaconda3/envs/openvla-oft/LIBERO')
+sys.path.append('./LIBERO')
 
 def main():
     print("🎉 LIBERO_GOAL_NEW Environment Setup Complete!")

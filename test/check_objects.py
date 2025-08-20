@@ -4,7 +4,7 @@ import sys
 import os
 
 # Add LIBERO path
-sys.path.append('/home/x/anaconda3/envs/openvla-oft/LIBERO')
+sys.path.append('./LIBERO')
 
 def check_missing_objects():
     """检查 BDDL 文件中引用的对象"""

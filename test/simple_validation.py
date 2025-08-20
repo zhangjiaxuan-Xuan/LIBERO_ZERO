@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 from PIL import Image
 
 # Add LIBERO path
-sys.path.append('/home/x/anaconda3/envs/openvla-oft/LIBERO')
+sys.path.append('./LIBERO')
 
 def validate_simple_env():
     """简化验证，直接使用 robosuite"""
@@ -86,7 +86,7 @@ def validate_simple_env():
             img_rotated = img_pil.rotate(180)
             
             # 保存图片
-            output_path = "/home/x/anaconda3/envs/openvla-oft/LIBERO/robosuite_test_render.png"
+            output_path = "./LIBERO/robosuite_test_render.png"
             img_rotated.save(output_path)
             
             print(f"🖼️ Test image saved to: {output_path}")
@@ -97,7 +97,7 @@ def validate_simple_env():
             plt.title("Robosuite Test Environment (180° rotated)")
             plt.axis('off')
             
-            output_path_plt = "/home/x/anaconda3/envs/openvla-oft/LIBERO/robosuite_test_render_with_title.png"
+            output_path_plt = "./LIBERO/robosuite_test_render_with_title.png"
             plt.savefig(output_path_plt, dpi=150, bbox_inches='tight')
             plt.close()
             

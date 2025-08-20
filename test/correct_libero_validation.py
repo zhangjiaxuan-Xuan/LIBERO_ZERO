@@ -11,7 +11,7 @@ import os
 import sys
 
 # 添加 LIBERO 路径
-sys.path.insert(0, '/home/x/anaconda3/envs/openvla-oft/LIBERO')
+sys.path.insert(0, './LIBERO')
 
 try:
     # 导入 LIBERO

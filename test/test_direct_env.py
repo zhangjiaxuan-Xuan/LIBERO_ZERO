@@ -4,7 +4,7 @@ import sys
 import os
 
 # Add LIBERO path
-sys.path.append('/home/x/anaconda3/envs/openvla-oft/LIBERO')
+sys.path.append('./LIBERO')
 
 def test_direct_env():
     """直接测试环境创建"""

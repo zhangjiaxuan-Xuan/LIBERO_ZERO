@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 from PIL import Image
 
 # Add LIBERO path
-sys.path.append('/home/x/anaconda3/envs/openvla-oft/LIBERO')
+sys.path.append('./LIBERO')
 
 def create_libero_mockup_scene():
     """创建一个模拟 LIBERO goal new 场景的环境"""
@@ -58,7 +58,7 @@ def create_libero_mockup_scene():
             img_rotated = img_pil.rotate(180)
             
             # 保存原始旋转图片
-            output_path = "/home/x/anaconda3/envs/openvla-oft/LIBERO/libero_goal_new_scene.png"
+            output_path = "./LIBERO/libero_goal_new_scene.png"
             img_rotated.save(output_path)
             
             print(f"🖼️ Scene image saved to: {output_path}")
@@ -84,7 +84,7 @@ def create_libero_mockup_scene():
                     ha='center', fontsize=12, style='italic', 
                     bbox=dict(boxstyle="round,pad=0.3", facecolor="lightgreen", alpha=0.8))
             
-            output_path_comparison = "/home/x/anaconda3/envs/openvla-oft/LIBERO/libero_goal_new_validation_comparison.png"
+            output_path_comparison = "./LIBERO/libero_goal_new_validation_comparison.png"
             plt.savefig(output_path_comparison, dpi=150, bbox_inches='tight')
             plt.close()
             
@@ -127,7 +127,7 @@ def create_libero_mockup_scene():
                        bbox=dict(boxstyle="round,pad=0.5", facecolor="lightblue", alpha=0.9),
                        verticalalignment='bottom')
             
-            output_path_final = "/home/x/anaconda3/envs/openvla-oft/LIBERO/libero_goal_new_final_validation.png"
+            output_path_final = "./LIBERO/libero_goal_new_final_validation.png"
             plt.savefig(output_path_final, dpi=150, bbox_inches='tight')
             plt.close()
             

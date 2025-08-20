@@ -4,7 +4,7 @@ import sys
 import os
 
 # Add LIBERO path
-sys.path.append('/home/x/anaconda3/envs/openvla-oft/LIBERO')
+sys.path.append('./LIBERO')
 
 def test_benchmark_registration():
     """测试新环境是否正确注册"""
