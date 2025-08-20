@@ -61,6 +61,12 @@ class AkitaBlackBowl(GoogleScannedObject):
 
 
 @register_object
+class OrangeBowl(GoogleScannedObject):
+    def __init__(self, name="orange_bowl", obj_name="orange_bowl"):
+        super().__init__(name, obj_name)
+
+
+@register_object
 class Plate(GoogleScannedObject):
     def __init__(self, name="plate", obj_name="plate"):
         super().__init__(name, obj_name)

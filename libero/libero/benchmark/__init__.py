@@ -55,6 +55,7 @@ def grab_language_from_filename(x):
 
 libero_suites = [
     "libero_spatial",
+    "libero_spatial_orange",
     "libero_object",
     "libero_goal",
     "libero_90",
@@ -173,6 +174,14 @@ class LIBERO_SPATIAL(Benchmark):
     def __init__(self, task_order_index=0):
         super().__init__(task_order_index=task_order_index)
         self.name = "libero_spatial"
+        self._make_benchmark()
+
+
+@register_benchmark
+class LIBERO_SPATIAL_ORANGE(Benchmark):
+    def __init__(self, task_order_index=0):
+        super().__init__(task_order_index=task_order_index)
+        self.name = "libero_spatial_orange"
         self._make_benchmark()
 
 
