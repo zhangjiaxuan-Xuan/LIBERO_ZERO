@@ -58,6 +58,7 @@ libero_suites = [
     "libero_spatial_orange",
     "libero_object",
     "libero_goal",
+    "libero_goal_new",
     "libero_90",
     "libero_10",
 ]
@@ -198,6 +199,14 @@ class LIBERO_GOAL(Benchmark):
     def __init__(self, task_order_index=0):
         super().__init__(task_order_index=task_order_index)
         self.name = "libero_goal"
+        self._make_benchmark()
+
+
+@register_benchmark
+class LIBERO_GOAL_NEW(Benchmark):
+    def __init__(self, task_order_index=0):
+        super().__init__(task_order_index=task_order_index)
+        self.name = "libero_goal_new"
         self._make_benchmark()
 
 

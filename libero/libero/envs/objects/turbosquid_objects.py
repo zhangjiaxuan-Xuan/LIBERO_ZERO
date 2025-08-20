@@ -104,6 +104,17 @@ class WineBottle(TurbosquidObjects):
 
 
 @register_object
+class BlueBottle(TurbosquidObjects):
+    def __init__(
+        self,
+        name="blue_bottle",
+        obj_name="blue_bottle",
+        joints=[dict(type="free", damping="0.0005")],
+    ):
+        super().__init__(name, obj_name, joints)
+
+
+@register_object
 class DiningSetGroup(TurbosquidObjects):
     """This dining set group is mostly for visualization"""
 
