@@ -54,6 +54,7 @@ def grab_language_from_filename(x):
 
 
 libero_suites = [
+    "libero_0",
     "libero_spatial",
     "libero_spatial_orange",
     "libero_object",
@@ -168,6 +169,14 @@ class Benchmark(abc.ABC):
 
     def set_task_embs(self, task_embs):
         self.task_embs = task_embs
+
+
+@register_benchmark
+class LIBERO_0(Benchmark):
+    def __init__(self, task_order_index=0):
+        super().__init__(task_order_index=task_order_index)
+        self.name = "libero_0"
+        self._make_benchmark()
 
 
 @register_benchmark

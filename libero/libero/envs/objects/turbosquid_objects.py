@@ -218,3 +218,14 @@ class WhiteYellowMug(TurbosquidObjects):
     ):
         super().__init__(name, obj_name, joints)
         self.rotation = (-np.pi / 2, -np.pi / 2)
+
+
+@register_object
+class Moutai(TurbosquidObjects):
+    def __init__(
+        self,
+        name="moutai",
+        obj_name="moutai",
+        joints=[dict(type="free", damping="0.0005")],
+    ):
+        super().__init__(name, obj_name, joints)

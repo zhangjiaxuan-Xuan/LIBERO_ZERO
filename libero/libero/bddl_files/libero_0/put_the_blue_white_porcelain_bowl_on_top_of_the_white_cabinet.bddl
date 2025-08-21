@@ -1,29 +1,29 @@
 (define (problem LIBERO_Tabletop_Manipulation)
   (:domain robosuite)
-  (:language Open the middle layer drawer of the white cabinet)
+  (:language Put the blue white porcelain bowl on the top drawer of the white cabinet)
     (:regions
-      (plate_region
+      (saucer_region
           (:target main_table)
           (:ranges (
               (0.04 -0.03 0.060000000000000005 -0.01)
             )
           )
       )
-      (white_bowl_region
+      (blue_white_porcelain_bowl_region
           (:target main_table)
           (:ranges (
               (-0.09999999999999999 -0.01 -0.08 0.01)
             )
           )
       )
-      (blue_bottle_region
+      (moutai_region
           (:target main_table)
           (:ranges (
               (-0.21000000000000002 -0.060000000000000005 -0.19 -0.04)
             )
           )
       )
-      (cream_cheese_region
+      (butter_region
           (:target main_table)
           (:ranges (
               (-0.060000000000000005 0.12000000000000001 -0.04 0.14)
@@ -100,28 +100,29 @@
   )
 
   (:objects
-    white_bowl_1 - white_bowl
-    cream_cheese_1 - cream_cheese
-    blue_bottle_1 - blue_bottle
-    plate_1 - plate
+    blue_white_porcelain_bowl_1 - blue_white_porcelain_bowl
+    butter_1 - butter
+    moutai_1 - moutai
+    saucer_1 - saucer
   )
 
   (:obj_of_interest
-    white_cabinet_1_middle_region
+    blue_white_porcelain_bowl_1
+    white_cabinet_1_top_side
   )
 
   (:init
-    (On blue_bottle_1 main_table_blue_bottle_region)
-    (On white_bowl_1 main_table_white_bowl_region)
-    (On plate_1 main_table_plate_region)
-    (On cream_cheese_1 main_table_cream_cheese_region)
+    (On moutai_1 main_table_moutai_region)
+    (On blue_white_porcelain_bowl_1 main_table_blue_white_porcelain_bowl_region)
+    (On saucer_1 main_table_saucer_region)
+    (On butter_1 main_table_butter_region)
     (On white_cabinet_1 main_table_cabinet_region)
     (On flat_stove_1 main_table_stove_region)
     (On wine_rack_1 main_table_wine_rack_region)
   )
 
   (:goal
-    (And (Open white_cabinet_1_middle_region))
+    (And (On blue_white_porcelain_bowl_1 white_cabinet_1_top_side))
   )
 
 )

@@ -1,4 +1,16 @@
 libero_task_map = {
+    "libero_0": [
+        "open_the_middle_drawer_of_the_white_cabinet",
+        "open_the_top_drawer_and_put_the_blue_white_porcelain_bowl_inside",
+        "push_the_saucer_to_the_front_of_the_stove",
+        "put_the_blue_white_porcelain_bowl_on_the_saucer",
+        "put_the_blue_white_porcelain_bowl_on_the_stove",
+        "put_the_blue_white_porcelain_bowl_on_top_of_the_white_cabinet",
+        "put_the_butter_in_the_blue_white_porcelain_bowl",
+        "put_the_moutai_on_the_rack",
+        "put_the_moutai_on_top_of_the_white_cabinet",
+        "turn_on_the_stove",
+    ],
     "libero_spatial": [
         "pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate",
         "pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate",

@@ -35,14 +35,15 @@ ______________________________________________________________________
 
 # Contents
 
-- [Installation](#Installation)
-- [Datasets](#Dataset)
-- [Getting Started](#Getting-Started)
-  - [Task](#Task)
-  - [Training](#Training)
-  - [Evaluation](#Evaluation)
-- [Citation](#Citation)
-- [License](#License)
+- [Contents](#contents)
+- [Installtion](#installtion)
+- [Datasets](#datasets)
+- [Getting Started](#getting-started)
+  - [Task](#task)
+  - [Training](#training)
+  - [Evaluation](#evaluation)
+- [Citation](#citation)
+- [License](#license)
 
 
 # Installtion

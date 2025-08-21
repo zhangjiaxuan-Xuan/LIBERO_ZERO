@@ -92,3 +92,15 @@ class GlazedRimPorcelainRamekin(GoogleScannedObject):
         obj_name="glazed_rim_porcelain_ramekin",
     ):
         super().__init__(name, obj_name)
+
+
+@register_object
+class BlueWhitePorcelainBowl(GoogleScannedObject):
+    def __init__(self, name="blue_white_porcelain_bowl", obj_name="blue_white_porcelain"):
+        super().__init__(name, obj_name)
+
+
+@register_object
+class Saucer(GoogleScannedObject):
+    def __init__(self, name="saucer", obj_name="saucer"):
+        super().__init__(name, obj_name)
