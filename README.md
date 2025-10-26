@@ -1,4 +1,4 @@
-## LIBERO-VERIFICATION: Verification Environment
+## LIBERO_ZERO: Verification Environment
 
 This repository is a verification environment built on top of the LIBERO project. It is intended for reproducing and validating the experiments described in the following work:
 

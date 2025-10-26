@@ -1,4 +1,4 @@
-## LIBERO-VERIFICATION：验证环境
+## LIBERO_ZERO：验证环境
 
 本仓库是基于 LIBERO 项目构建的验证环境，旨在用于复现与验证下列工作中描述的实验：
 
